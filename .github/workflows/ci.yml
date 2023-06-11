@@ -1,0 +1,22 @@
+name: ci
+on:
+  push:
+    branches:
+      - master
+      - main
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v3
+      - uses: action/setput-python@4
+        with:
+          python-version: 3.x
+      - uses: action/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+      - run: pip install mkdocs-material
+      - run: mcdocs gh-deploy --force
