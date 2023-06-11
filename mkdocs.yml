@@ -1,4 +1,38 @@
 site_name: DevOps portfolio projects
 theme:
   name: material
+  features:
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: teal
+      accent: purple 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: teal
+      accent: lime
+
+plugins:
+  - social
+  - search:
+      lang: en
+
+extra:
+  social:
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/kuxar1
+    - icon: fontawesome/brands/github
+      link: https://github.com/kuxar1
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/oleksandr-kukhar-94b30a222/
 
