@@ -1,17 +1,14 @@
-# Welcome to MkDocs
+# Deploy Jenkins Pipeline to Build and Deploy Simple Java Application
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+### Table of Contents
 
-## Commands
+1. Goal
+2. Pre-Requisites
+3. Server Configuration
+4. Jenkins Pipeline
+5. Validation
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+<figure markdown>
+  ![Image title](https://devopsrealtime.com/wp-content/uploads/2022/03/devopsrealtime_Jenkins_Pipeline.png){ width="600" }
+  <figcaption>Image caption</figcaption>
+</figure>
