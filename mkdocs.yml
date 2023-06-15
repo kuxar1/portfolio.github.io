@@ -7,6 +7,10 @@ theme:
     - search.highlight
     - content.code.annotation
     - content.code.copy
+    - navigation.tabs
+    - navigation.path
+    - navigation.instant
+    - navigation.top
   language: en
   palette:
     - scheme: default
@@ -23,9 +27,10 @@ theme:
       accent: lime
 
 plugins:
-  - social
   - search:
       lang: en
+  - git-revision-date-localized:
+      enable_creation_date: true
 
 extra:
   social:
@@ -36,17 +41,79 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/oleksandr-kukhar-94b30a222/
 
+# markdown_extensions:
+#   - pymdownx.highlight:
+#       anchor_linenums: true
+#   - pymdownx.inlinehilite
+#   - pymdownx.snippets
+#   - admonition
+#   - pymdownx.arithmatex:
+#       generic: true
+#   - footnotes
+#   - pymdownx.details
+#   - pymdownx.superfences
+#   - pymdownx.mark
+#   - attr_list
+#   - md_in_html
+
 markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - abbr
   - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
   - pymdownx.arithmatex:
       generic: true
-  - footnotes
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
   - pymdownx.mark
-  - attr_list
-  - md_in_html
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+
+nav:
+  # - " ":
+  #   - index.md
+  - DevOps projects:
+      - devops_projects/index.md
+      - Project 1:
+          - devops_projects/project_1/index.md
+      - Project 3:
+          - devops_projects/project_2/index.md
+      - Project 3:
+          - devops_projects/project_3/index.md
+  - Notes:
+      - notes/index.md
+      - Project 1:
+          - notes/project_1/index.md
+      - Project 3:
+          - notes/project_2/index.md
+      - Project 3:
+          - notes/project_3/index.md
