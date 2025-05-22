@@ -104,7 +104,7 @@ nav:
   - DevOps projects:
       - devops_projects/index.md
       - Project 1:
-          - devops_projects/project_1/index.md
+          - devops_projects/Task_1/index.md
       - Project 3:
           - devops_projects/project_2/index.md
       - Project 3:
@@ -112,7 +112,7 @@ nav:
   - Notes:
       - notes/index.md
       - Project 1:
-          - notes/project_1/index.md
+          - notes/Task_1/index.md
       - Project 3:
           - notes/project_2/index.md
       - Project 3:
